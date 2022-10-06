@@ -102,3 +102,5 @@ dist
 
 # TernJS port file
 .tern-port
+streaming_media/content_hints/
+.DS_Store

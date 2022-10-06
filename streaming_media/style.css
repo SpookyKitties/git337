@@ -39,7 +39,7 @@
   background-color: white;
 }
 .playlist-scroll > div {
-  margin: 15px 10px 0px 10px;
+  margin: 7.5px 10px 7.5px 10px;
   display: grid;
   grid-template-columns: 0.5fr 1fr;
   text-align: center;
@@ -119,7 +119,6 @@ audio::-webkit-media-controls-enclosure {
 #playlists,
 #curated,
 #trending {
-  height: 550px;
   display: flex;
   flex-direction: column;
 }
@@ -139,12 +138,21 @@ audio::-webkit-media-controls-enclosure {
 #trending::-webkit-scrollbar-thumb:hover {
   background-color: #ffffff;
 }
+#playlists .playlist-scroll,
+#curated .playlist-scroll,
+#trending .playlist-scroll {
+  height: 450px;
+}
+#playlists h2,
+#curated h2,
+#trending h2 {
+  margin-left: 10px;
+}
 #playlists button,
 #curated button,
 #trending button {
-  align-self: flex-end;
   width: 150px;
-  height: 50px;
+  height: 40px;
   margin: 10px;
   color: #ffffff;
   background-color: #590242;
@@ -322,13 +330,16 @@ input:checked ~ label:not(.steps) span:after {
 }
 
 @media screen and (max-width: 834px) {
+  button {
+    align-self: flex-end;
+  }
   label[for=dropdown] {
     top: -23px;
   }
   ul {
     margin-top: -22px;
   }
-  section button {
+  button {
     align-self: flex-start;
   }
 }
@@ -370,9 +381,6 @@ input {
     grid-template-rows: 1fr 1fr;
     display: block;
   }
-  #playlist-container button {
-    align-self: flex-start;
-  }
   #playlist-container #playlists,
 #playlist-container #curated {
     height: auto;
@@ -383,6 +391,7 @@ input {
     grid-template-rows: unset;
     overflow-x: auto;
     overflow-y: hidden;
+    height: unset;
   }
   #playlist-container .playlist-scroll .playlist-item {
     grid-template-columns: unset;

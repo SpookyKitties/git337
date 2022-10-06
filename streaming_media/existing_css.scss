@@ -40,7 +40,7 @@ $violet: #590242;
   display: grid;
   background-color: white;
   > div {
-    margin: 15px 10px 0px 10px;
+    margin: 7.5px 10px 7.5px 10px;
 
     display: grid;
     grid-template-columns: 0.5fr 1fr;
@@ -138,15 +138,21 @@ audio {
     }
   }
 
-  height: 550px;
+  .playlist-scroll {
+    height: 450px;
+  }
+  //   height: 550px;
+  h2 {
+    margin-left: 10px;
+  }
 
   display: flex;
   flex-direction: column;
 
   button {
-    align-self: flex-end;
+    // align-self: flex-end;
     width: 150px;
-    height: 50px;
+    height: 40px;
     margin: 10px;
     color: #ffffff;
     background-color: #590242;

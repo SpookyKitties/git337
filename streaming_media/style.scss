@@ -137,6 +137,9 @@ input:checked ~ label:not(.steps) span:after {
 }
 
 @media screen and (max-width: 834px) {
+  button {
+    align-self: flex-end;
+  }
   label[for="dropdown"] {
     top: -23px;
   }
@@ -144,11 +147,11 @@ input:checked ~ label:not(.steps) span:after {
     margin-top: -22px;
   }
 
-  section {
-    button {
-      align-self: flex-start;
-    }
+  button {
+    align-self: flex-start;
   }
+  // section {
+  // }
 }
 header,
 #trending h2 {
@@ -189,9 +192,6 @@ header,
     grid-template-rows: 1fr 1fr;
     display: block;
 
-    button {
-      align-self: flex-start;
-    }
     #playlists,
     #curated {
       height: auto;
@@ -202,6 +202,7 @@ header,
       grid-template-rows: unset;
       overflow-x: auto;
       overflow-y: hidden;
+      height: unset;
       .playlist-item {
         grid-template-columns: unset;
         grid-template-rows: 1fr 1fr;

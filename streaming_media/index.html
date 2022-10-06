@@ -8,20 +8,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Smooth Jazz</h1>
-      <p>
-        This station is dedicated to the soothing sounds of smooth jazz. This
-        genre of commercially oriented crossover jazz became dominant in the
-        1980s and early 1990s.
-      </p>
-    </header>
     <nav>
       <h2>Main Navigation</h2>
       <input type="checkbox" id="dropdown" />
       <label for="dropdown"><span></span></label>
       <ul>
-        <li>MuzakMaker</li>
+        <li><a href="#home">MuzakMaker</a></li>
         <li><a href="#trending">TRENDING SONGS</a></li>
         <li><a href="#playlists">YOUR PLAYLISTS</a></li>
         <li><a href="#curated">CURATED PLAYLISTS</a></li>
@@ -32,6 +24,14 @@
         </li>
       </ul>
     </nav>
+    <header>
+      <h1>Smooth Jazz</h1>
+      <p>
+        This station is dedicated to the soothing sounds of smooth jazz. This
+        genre of commercially oriented crossover jazz became dominant in the
+        1980s and early 1990s.
+      </p>
+    </header>
     <main>
       <section id="trending">
         <h2>Trending Songs</h2>
@@ -116,18 +116,131 @@
         </div>
         <button>More trending</button>
       </section>
-      <section id="playlists">
+      <section id="playlist-container">
         <section id="playlists">
-          <article></article>
+          <h2>Your Playlists</h2>
+          <div class="playlist-scroll">
+            <div class="playlist-item">
+              <img
+                src="images/best-of-2020-cover.png"
+                alt="The music that got you through the lock down."
+              />
+              <dl>
+                <dt>Best of 2020</dt>
+                <dd>The music that got you through the lock down.</dd>
+              </dl>
+            </div>
+            <div class="playlist-item">
+              <img
+                src="images/pumpkin-spice-cover.png"
+                alt="Creamy and spicy, just like your favorite autumnal latte."
+              />
+              <dl>
+                <dt>Pumpkin Spice</dt>
+                <dd>
+                  Creamy and spicy, just like your favorite autumnal latte.
+                </dd>
+              </dl>
+            </div>
+            <div class="playlist-item">
+              <img
+                src="images/quiet-storm-cover.png"
+                alt="Slow tempos and relaxed rhythms. "
+              />
+              <dl>
+                <dt>Quiet Storm</dt>
+                <dd>Slow tempos and relaxed rhythms.</dd>
+              </dl>
+            </div>
+            <div class="playlist-item">
+              <img
+                src="images/smooth-jazz-cover.png"
+                alt="The pioneers of smooth jazz"
+              />
+              <dl>
+                <dt>Smooth Jazz</dt>
+                <dd>The pioneers of smooth jazz</dd>
+              </dl>
+            </div>
+            <div class="playlist-item">
+              <img
+                src="images/smooth-study-cover.png"
+                alt="Background music to keep you going while you study. "
+              />
+              <dl>
+                <dt>Smooth Study</dt>
+                <dd>Background music to keep you going while you study.</dd>
+              </dl>
+            </div>
+          </div>
           <button>All your playlists</button>
         </section>
-        <section id="curated">
-          <article></article>
-          <button>More curated</button>
-        </section>
+        <div class="playlist-container">
+          <section id="curated">
+            <h2>Curated Playlist</h2>
+            <div class="playlist-scroll">
+              <div class="playlist-item">
+                <img
+                  src="images/boozy-brunch-cover.png"
+                  alt="Light up the afternoon with these energetic hits. "
+                />
+                <dl>
+                  <dt>Boozy Brunch</dt>
+                  <dd>Light up the afternoon with these energetic hits.</dd>
+                </dl>
+              </div>
+              <div class="playlist-item">
+                <img
+                  src="images/dinner-party-cover.png"
+                  alt="Background music to give your party life, but allow your guests to chat."
+                />
+                <dl>
+                  <dt>Dinner Party</dt>
+                  <dd>
+                    Background music to give your party life, but allow your
+                    guests to chat.
+                  </dd>
+                </dl>
+              </div>
+              <div class="playlist-item">
+                <img
+                  src="images/mellow-cover.png"
+                  alt="Relax after a stressful day with this collection of extra smooth jazz."
+                />
+                <dl>
+                  <dt>Mellow</dt>
+                  <dd>
+                    Relax after a stressful day with this collection of extra
+                    smooth jazz.
+                  </dd>
+                </dl>
+              </div>
+              <div class="playlist-item">
+                <img
+                  src="images/jazz-chill-cover.png"
+                  alt="Set the mood with these silky sounds."
+                />
+                <dl>
+                  <dt>Jazz and Chill</dt>
+                  <dd>Set the mood with these silky sounds.</dd>
+                </dl>
+              </div>
+              <div class="playlist-item">
+                <img
+                  src="images/smooth-saxophone-cover.png"
+                  alt="The greatest collection of your sax favorites."
+                />
+                <dl>
+                  <dt>Jazz Saxophone</dt>
+                  <dd>The greatest collection of your sax favorites.</dd>
+                </dl>
+              </div>
+            </div>
+            <button>More curated</button>
+          </section>
+        </div>
       </section>
-
-      <footer><small>Copyright 2022 Smooth Jazz</small></footer>
     </main>
+    <footer><small>Copyright 2022 Smooth Jazz</small></footer>
   </body>
 </html>

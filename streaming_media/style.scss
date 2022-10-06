@@ -1,22 +1,87 @@
+// @import "./existing_css.scss";
+@use "./existing_css.scss";
 html {
   background-color: #020659;
 }
 
 body {
   max-width: 834px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
+nav {
+  width: 100%;
+  height: 75px;
+  background-color: #030a8c;
+  // position: absolute;
+  top: 0;
+  z-index: 1;
+  text-transform: uppercase;
+  h2 {
+    visibility: hidden;
+    height: 1px;
+  }
+  ul {
+    @media screen and (min-width: 834px) {
+      text-align: center;
+      li {
+        a {
+          color: #ffffff;
+          text-decoration: none;
+          &[href="#home"] {
+            left: 0;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  background-color: #ffffff;
+}
 ul {
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.2s ease-out;
   list-style: none;
-  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  background-color: #2104d9;
+  max-height: 0;
 }
-nav {
-  h2 {
-    visibility: hidden;
-    height: 1px;
+
+li {
+  a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[href="#home"] {
+  text-transform: capitalize;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  left: 90px;
+  // padding: 16px 16px;
+}
+
+li,
+input {
+  &:hover {
+    background-color: #590242;
   }
 }
 
@@ -71,16 +136,62 @@ input:checked ~ label:not(.steps) span:after {
   top: 0;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  button {
+    align-self: flex-end;
+    width: 100px;
+    margin: 10px;
+    color: #ffffff;
+    background-color: #590242;
+    border-style: none;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  label[for="dropdown"] {
+    top: -23px;
+  }
+  ul {
+    margin: -22px;
+  }
+
+  section {
+    button {
+      align-self: flex-start;
+    }
+  }
+}
+header,
+#trending h2 {
+  padding-left: 25px;
+  margin-bottom: 0px;
+}
+
 @media screen and (min-width: 834px) {
+  nav {
+    width: 834px;
+  }
   ul {
     overflow: visible;
     position: absolute;
     top: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr;
+
+    li {
+      top: unset !important;
+    }
   }
   label span,
   input {
     display: none;
   }
+}
+
+#playlist-container {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
 }

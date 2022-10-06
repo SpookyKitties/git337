@@ -6,13 +6,13 @@ html {
 
 body {
   max-width: 834px;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
 nav {
-  width: 100%;
   height: 75px;
   background-color: #030a8c;
   // position: absolute;
@@ -136,26 +136,12 @@ input:checked ~ label:not(.steps) span:after {
   top: 0;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  button {
-    align-self: flex-end;
-    width: 100px;
-    margin: 10px;
-    color: #ffffff;
-    background-color: #590242;
-    border-style: none;
-    padding: 5px;
-  }
-}
-
 @media screen and (max-width: 834px) {
   label[for="dropdown"] {
     top: -23px;
   }
   ul {
-    margin: -22px;
+    margin-top: -22px;
   }
 
   section {
@@ -179,9 +165,12 @@ header,
     position: absolute;
     top: 0;
     display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.25fr 0.75fr 0.75fr 0.75fr 0.75fr;
 
     li {
+      a {
+        display: table-caption;
+      }
       top: unset !important;
     }
   }
@@ -194,4 +183,26 @@ header,
 #playlist-container {
   grid-template-columns: 1fr 1fr;
   display: grid;
+
+  @media screen and (max-width: 834px) {
+    grid-template-columns: unset;
+    grid-template-rows: 1fr 1fr;
+    display: block;
+    #playlists,
+    #curated {
+      height: auto;
+      margin: 0;
+    }
+    .playlist-scroll {
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: unset;
+      overflow-x: auto;
+      overflow-y: hidden;
+      .playlist-item {
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr;
+        width: 150px;
+      }
+    }
+  }
 }

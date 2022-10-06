@@ -188,6 +188,10 @@ header,
     grid-template-columns: unset;
     grid-template-rows: 1fr 1fr;
     display: block;
+
+    button {
+      align-self: flex-start;
+    }
     #playlists,
     #curated {
       height: auto;

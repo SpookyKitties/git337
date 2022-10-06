@@ -124,7 +124,8 @@ audio {
 }
 
 #playlists,
-#curated {
+#curated,
+#trending {
   &::-webkit-scrollbar-track {
     box-shadow: inset 0 0 15px #020659;
   }

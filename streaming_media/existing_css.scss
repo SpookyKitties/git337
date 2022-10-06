@@ -141,7 +141,6 @@ audio {
   .playlist-scroll {
     height: 450px;
   }
-  //   height: 550px;
   h2 {
     margin-left: 10px;
   }
@@ -150,7 +149,6 @@ audio {
   flex-direction: column;
 
   button {
-    // align-self: flex-end;
     width: 150px;
     height: 40px;
     margin: 10px;
@@ -158,6 +156,9 @@ audio {
     background-color: #590242;
     border-style: none;
     padding: 5px;
+    &:hover {
+      background-color: #020659;
+    }
   }
 }
 

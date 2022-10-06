@@ -159,6 +159,11 @@ audio::-webkit-media-controls-enclosure {
   border-style: none;
   padding: 5px;
 }
+#playlists button:hover,
+#curated button:hover,
+#trending button:hover {
+  background-color: #020659;
+}
 
 body {
   font-family: Optima, sans-serif;
@@ -330,17 +335,11 @@ input:checked ~ label:not(.steps) span:after {
 }
 
 @media screen and (max-width: 834px) {
-  button {
-    align-self: flex-end;
-  }
   label[for=dropdown] {
     top: -23px;
   }
   ul {
     margin-top: -22px;
-  }
-  button {
-    align-self: flex-start;
   }
 }
 header,
@@ -397,6 +396,17 @@ input {
     grid-template-columns: unset;
     grid-template-rows: 1fr 1fr;
     width: 150px;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  button {
+    align-self: flex-start;
+  }
+}
+@media screen and (min-width: 834px) {
+  button {
+    align-self: flex-end;
   }
 }
 

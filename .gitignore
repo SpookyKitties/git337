@@ -104,3 +104,6 @@ dist
 .tern-port
 streaming_media/content_hints/
 .DS_Store
+*.docx
+*.mov
+*.pptx

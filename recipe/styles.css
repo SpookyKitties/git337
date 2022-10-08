@@ -246,6 +246,9 @@ main #recipe ul {
 main aside {
   background-color: #7abfbf;
 }
+main aside h3 {
+  margin: 0;
+}
 main aside #side-dish-container dl dd:last-child {
   font-weight: bold;
 }
@@ -350,6 +353,7 @@ main aside #side-dish-container .side-dish-list-item dl dd {
     line-height: 1.5em;
   }
   main .article-content > ul {
+    margin: 0;
     border-color: #eb5428;
     border-width: 1px;
     border-style: solid;
@@ -397,7 +401,11 @@ main aside #side-dish-container .side-dish-list-item dl dd {
   }
   main aside #side-dish-container .side-dish-list-item {
     justify-self: center;
+    height: 460px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   main aside #side-dish-container .side-dish-list-item img {
     padding-left: 0px;
@@ -405,6 +413,14 @@ main aside #side-dish-container .side-dish-list-item dl dd {
   main aside #side-dish-container .side-dish-list-item > * {
     margin: 10px;
     padding-left: 10px;
+  }
+  main aside #side-dish-container .side-dish-list-item dl {
+    padding: 0;
+    margin: 0;
+  }
+  main aside #side-dish-container .side-dish-list-item dl dt,
+main aside #side-dish-container .side-dish-list-item dl dd {
+    margin: 0;
   }
 }
 @media screen and (max-width: 767px) {
@@ -505,10 +521,10 @@ ul {
   stroke: #f2f2f2;
   background-color: #eb5428;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
   .search {
     top: 25px;
-    right: 150px;
+    right: 30%;
     left: unset;
   }
 }

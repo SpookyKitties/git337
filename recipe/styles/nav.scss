@@ -32,12 +32,11 @@ nav {
         background-color: $red_orange;
       }
 
-      svg {
-        fill-rule: $red_orange;
-      }
-
       &#sign-in {
         justify-self: end;
+        svg {
+          stroke: $red_orange;
+        }
         a {
           margin: 30px;
         }

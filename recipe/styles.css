@@ -48,6 +48,8 @@ footer #social ul a {
 @media screen and (min-width: 1280px) {
   footer {
     padding: 10px;
+    position: relative;
+    top: 50px;
     display: grid;
   }
   footer .copyright {
@@ -111,11 +113,11 @@ nav ul li img {
 nav ul li#home {
   background-color: #eb5428;
 }
-nav ul li svg {
-  fill-rule: #eb5428;
-}
 nav ul li#sign-in {
   justify-self: end;
+}
+nav ul li#sign-in svg {
+  stroke: #eb5428;
 }
 nav ul li#sign-in a {
   margin: 30px;
@@ -132,17 +134,27 @@ nav ul li#sign-in a {
     grid-template-columns: 200px 125px 125px 125px 125px 125px 125px 125px 200px;
   }
 }
+main h1 {
+  visibility: hidden;
+  height: 1px;
+}
 main h2 {
   padding: 0;
-  margin: 0;
+  margin: 5px;
+  text-align: center;
 }
 main #recipe ul {
   list-style: initial;
 }
+main aside {
+  background-color: #7abfbf;
+}
 @media screen and (min-width: 1280px) {
   main {
     display: grid;
-    grid-template-rows: 150px 750px 100px 500px 500px;
+    grid-template-rows: 100px 750px 100px 500px 500px;
+    position: relative;
+    top: 125px;
   }
   main .article-content {
     display: grid;
@@ -150,6 +162,13 @@ main #recipe ul {
   }
   main .article-content img {
     width: 500px;
+  }
+  main .article-content div {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  main .article-content div p {
+    line-height: 1.5em;
   }
   main #details {
     display: grid;
@@ -178,6 +197,31 @@ main #recipe ul {
   main #recipe li {
     padding: 10px;
     text-align: left;
+  }
+  main aside {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 40px 460px;
+    height: 500px;
+  }
+  main aside #side-dish-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+  }
+  main aside #side-dish-container .side-dish-list-item {
+    justify-self: center;
+    text-align: left;
+  }
+  main aside #side-dish-container .side-dish-list-item img {
+    padding-left: 0px;
+  }
+  main aside #side-dish-container .side-dish-list-item > * {
+    margin: 10px;
+    padding-left: 10px;
+  }
+  main aside #side-dish-container .side-dish-list-item :last-child {
+    font-weight: bold;
   }
 }
 
@@ -242,6 +286,18 @@ ul {
 .search {
   position: absolute;
   top: 150px;
+  left: 45%;
+  display: flex;
+  flex-direction: row;
+}
+.search input {
+  height: 40px;
+  border-color: #eb5428;
+  border-width: 2px;
+}
+.search svg {
+  stroke: #f2f2f2;
+  background-color: #eb5428;
 }
 
 /*# sourceMappingURL=styles.css.map */

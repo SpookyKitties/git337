@@ -1,4 +1,20 @@
 .search {
   position: absolute;
   top: 150px;
+  //   margin: 0 auto
+  left: 45%;
+  display: flex;
+  flex-direction: row;
+  input {
+    height: 40px;
+    border-color: $red_orange;
+    border-width: 2px;
+  }
+  svg {
+    stroke: $white;
+    background-color: $red_orange;
+    circle,
+    line {
+    }
+  }
 }

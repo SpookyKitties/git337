@@ -22,19 +22,22 @@
             <li><a href="#">Jump</a></li>
           </ul>
           <img src="images/street-tacos.png" alt="Street Tacos " />
-          <p>
-            Street tacos are delicious, amazing, and oh so mouthwatering! Bite
-            into tender steak, zesty lime flavor with a hint of spice and add on
-            tomatoes, avocado, and onions for a savory bite you are going to
-            love!
-            <br />
-            These street tacos are completely jam-packed with flavor and they
-            are so easy to make. I love how the meat is so tender and juicy and
-            only takes an hour to marinate! If you absolutely love tacos like
-            me, try out these other amazing taco recipes! These taco-stuffed
-            avocados, Baja fish tacos, and ground beef tacos will not
-            disappoint!!
-          </p>
+          <div>
+            <p>
+              Street tacos are delicious, amazing, and oh so mouthwatering! Bite
+              into tender steak, zesty lime flavor with a hint of spice and add
+              on tomatoes, avocado, and onions for a savory bite you are going
+              to love!
+            </p>
+            <p>
+              These street tacos are completely jam-packed with flavor and they
+              are so easy to make. I love how the meat is so tender and juicy
+              and only takes an hour to marinate! If you absolutely love tacos
+              like me, try out these other amazing taco recipes! These
+              taco-stuffed avocados, Baja fish tacos, and ground beef tacos will
+              not disappoint!!
+            </p>
+          </div>
         </div>
       </article>
       <section id="details">
@@ -90,30 +93,32 @@
       </div>
 
       <aside>
-        <div class="side-dish-list-item">
-          <img src="images/mexican-rice.png" alt="Mexican Rice" />
-          <h3>Mexican Rice</h3>
-          <p>Traditional recipe with a twist.</p>
-          <span class="rating-4">Rating</span>
-        </div>
         <h2>Need some side dishes?</h2>
-        <div class="side-dish-list-item">
-          <img src="images/salsa.png" alt="salsa" />
-          <h3>Salsa</h3>
-          <p>Just the right amount of spice.</p>
-          <span class="rating-5">Rating</span>
-        </div>
-        <div class="side-dish-list-item">
-          <img src="images/guacamole.png" alt="Guacamole" />
-          <h3>Guacamole</h3>
-          <p>Fresh and healthy.</p>
-          <span class="rating-4">Rating</span>
-        </div>
-        <div class="side-dish-list-item">
-          <img src="images/tortillas.png" alt="Tortillas" />
-          <h3>Tortillas</h3>
-          <p>Easy to make and so good.</p>
-          <span class="rating-4">Rating</span>
+        <div id="side-dish-container">
+          <div class="side-dish-list-item">
+            <img src="images/mexican-rice.png" alt="Mexican Rice" />
+            <h3>Mexican Rice</h3>
+            <p>Traditional recipe with a twist.</p>
+            <span class="rating-4">Rating</span>
+          </div>
+          <div class="side-dish-list-item">
+            <img src="images/salsa.png" alt="salsa" />
+            <h3>Salsa</h3>
+            <p>Just the right amount of spice.</p>
+            <span class="rating-5">Rating</span>
+          </div>
+          <div class="side-dish-list-item">
+            <img src="images/guacamole.png" alt="Guacamole" />
+            <h3>Guacamole</h3>
+            <p>Fresh and healthy.</p>
+            <span class="rating-4">Rating</span>
+          </div>
+          <div class="side-dish-list-item">
+            <img src="images/tortillas.png" alt="Tortillas" />
+            <h3>Tortillas</h3>
+            <p>Easy to make and so good.</p>
+            <span class="rating-4">Rating</span>
+          </div>
         </div>
       </aside>
     </main>
@@ -219,7 +224,28 @@
         </ul>
       </nav>
       <div class="search">
-        <input type="search" name="search" id="search" />
+        <input
+          type="search"
+          placeholder="Find a recipe"
+          name="search"
+          id="search"
+        />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-search"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#EB5428"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
       </div>
     </header>
     <footer>

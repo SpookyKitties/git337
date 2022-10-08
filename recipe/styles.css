@@ -1,0 +1,133 @@
+@import url("https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400");
+body {
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  body {
+    width: 414px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  body {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    width: 1280px;
+  }
+}
+
+html {
+  background-color: rgba(122, 191, 191, 0.5);
+}
+
+nav {
+  background-color: #f2f2f2;
+  height: 125px;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  text-transform: uppercase;
+  display: grid;
+  gap: 0;
+  width: 125px;
+  height: 125px;
+}
+nav ul li a, nav ul li#home {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #eb5428;
+  margin: 15px;
+}
+nav ul li img {
+  height: 75px;
+  width: 75px;
+}
+nav ul li#home {
+  background-color: #eb5428;
+}
+nav ul li svg {
+  fill-rule: #eb5428;
+}
+nav ul li#sign-in {
+  justify-self: end;
+}
+
+@media screen and (min-width: 1280px) {
+  nav {
+    position: absolute;
+    top: 0;
+    width: 1280px;
+  }
+  nav ul {
+    display: grid;
+    grid-template-columns: 200px 125px 125px 125px 125px 125px 125px 125px 200px;
+  }
+}
+h1,
+h2,
+h3,
+nav a,
+nav span,
+figcaption,
+menu li,
+#social li,
+footer {
+  font-family: "Bebas Neue";
+}
+
+p,
+dd,
+li,
+nav,
+input {
+  font-family: "Montserrat Regular";
+}
+
+dt {
+  font-family: "Montserrat Bold";
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+nav a,
+nav span,
+figcaption,
+menu li,
+#social li,
+footer {
+  font-size: 20px;
+}
+
+p,
+dd,
+li,
+nav,
+input,
+dt {
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

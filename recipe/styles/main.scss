@@ -95,7 +95,8 @@ main {
         .side-dish-list-item {
           display: grid;
           grid-template-columns: 100px calc(100% - 100px);
-          padding-top: 20px;
+          padding-top: 15px;
+          padding-bottom: 15px;
           gap: 10px;
           img {
             width: 100px;

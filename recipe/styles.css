@@ -45,6 +45,33 @@ footer #social ul a {
   display: grid;
   justify-items: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  footer {
+    position: relative;
+    top: 200px;
+    display: grid;
+  }
+  footer .copyright {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 25px;
+    align-items: center;
+  }
+  footer .copyright img {
+    width: 150px;
+  }
+  footer .copyright > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  footer #social {
+    grid-column-start: 3;
+    grid-row-start: 1;
+  }
+}
 @media screen and (min-width: 1280px) {
   footer {
     padding: 10px;
@@ -247,7 +274,8 @@ main .article-content p {
   main aside #side-dish-container .side-dish-list-item {
     display: grid;
     grid-template-columns: 100px calc(100% - 100px);
-    padding-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     gap: 10px;
   }
   main aside #side-dish-container .side-dish-list-item img {

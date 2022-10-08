@@ -40,6 +40,25 @@ main {
           line-height: 1.5em;
         }
       }
+      > ul {
+        border-color: $red_orange;
+        border-width: 1px;
+        margin: 0;
+        border-style: solid;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        li {
+          padding: 10px;
+          a {
+            text-decoration: none;
+            color: $red_orange;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      }
     }
 
     #details {

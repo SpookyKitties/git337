@@ -190,6 +190,9 @@ main #recipe ul {
 main aside {
   background-color: #7abfbf;
 }
+main #details ul li :first-child {
+  font-weight: bold;
+}
 main .article-content ul {
   padding: 0;
 }
@@ -222,6 +225,47 @@ main .article-content p {
   }
   main .article-content > div {
     padding: 5px;
+  }
+  main #details ul {
+    text-align: center;
+    padding: 0;
+  }
+  main #recipe {
+    display: grid;
+    grid-template-columns: 250px calc(100% - 250px);
+    text-align: center;
+  }
+  main #recipe li {
+    padding: 10px;
+    text-align: left;
+  }
+  main aside #side-dish-container {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  main aside #side-dish-container .side-dish-list-item {
+    display: grid;
+    grid-template-columns: 100px calc(100% - 100px);
+    padding-top: 20px;
+    gap: 10px;
+  }
+  main aside #side-dish-container .side-dish-list-item img {
+    width: 100px;
+  }
+  main aside #side-dish-container .side-dish-list-item h3 {
+    margin: 0;
+  }
+  main aside #side-dish-container .side-dish-list-item dl {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 0;
+    height: 100px;
+  }
+  main aside #side-dish-container .side-dish-list-item dl dt,
+main aside #side-dish-container .side-dish-list-item dl dd {
+    margin: 0;
+    padding: 0;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -268,9 +312,6 @@ main .article-content p {
   }
   main #details ul li {
     display: grid;
-  }
-  main #details ul li :first-child {
-    font-weight: bold;
   }
   main #recipe {
     display: grid;

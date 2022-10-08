@@ -45,6 +45,35 @@ footer #social ul a {
   display: grid;
   justify-items: center;
 }
+@media screen and (max-width: 767px) {
+  footer {
+    position: relative;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer #social ul {
+    width: 414px;
+    padding: 0;
+  }
+  footer .copyright {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 25px;
+    align-items: center;
+  }
+  footer .copyright img {
+    width: 150px;
+  }
+  footer .copyright > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1279.98px) {
   footer {
     position: relative;

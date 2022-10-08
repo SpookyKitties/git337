@@ -1,0 +1,44 @@
+@import "./colors.scss";
+
+footer {
+  background-color: $white;
+  img {
+    height: 150px;
+  }
+  h2,
+  h3 {
+    visibility: hidden;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+    grid-column-start: 3;
+  }
+  #social {
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      a {
+        display: grid;
+        justify-items: center;
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+    .copyright {
+      grid-column-start: 1;
+      grid-row-start: 1;
+    }
+    #social {
+      grid-column-start: 3;
+      grid-row-start: 1;
+    }
+    display: grid;
+  }
+}

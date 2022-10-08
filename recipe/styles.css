@@ -123,6 +123,39 @@ nav ul li#sign-in a {
   margin: 30px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  nav {
+    width: 768px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+  }
+  nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+  }
+  nav ul li {
+    height: 75px;
+    width: 75px;
+    grid-row-start: 2;
+  }
+  nav ul li#home {
+    grid-row-start: 1;
+  }
+  nav ul li#home svg {
+    height: 100%;
+    width: 100%;
+  }
+  nav ul li#sign-in {
+    position: absolute;
+    top: 0;
+    grid-row-start: 1;
+  }
+  nav ul li#sign-in a {
+    margin: 10px;
+  }
+}
 @media screen and (min-width: 1280px) {
   nav {
     position: absolute;
@@ -317,6 +350,13 @@ ul {
 .search svg {
   stroke: #f2f2f2;
   background-color: #eb5428;
+}
+@media screen and (min-width: 768px) {
+  .search {
+    top: 25px;
+    right: 150px;
+    left: unset;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

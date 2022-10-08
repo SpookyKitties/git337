@@ -1,0 +1,58 @@
+@import "./colors.scss";
+main {
+  h2 {
+    padding: 0;
+    margin: 0;
+  }
+  #recipe {
+    ul {
+      list-style: initial;
+    }
+  }
+  @media screen and (max-width: 767px) {
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: grid;
+    grid-template-rows: 150px 750px 100px 500px 500px;
+    .article-content {
+      display: grid;
+      grid-template-columns: 125px 500px 655px;
+      img {
+        width: 500px;
+      }
+    }
+
+    #details {
+      display: grid;
+      background-color: $black;
+      color: $teal;
+      justify-items: center;
+      ul {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        li {
+          display: grid;
+          :first-child {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    #recipe {
+      display: grid;
+      grid-template-columns: 250px calc(100% - 250px);
+      text-align: center;
+      li {
+        padding: 10px;
+        text-align: left;
+      }
+    }
+  }
+}

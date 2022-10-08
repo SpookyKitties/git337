@@ -1,5 +1,6 @@
 @import url("https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400");
 body {
+  background-color: #f2f2f2;
   margin: 0 auto;
 }
 @media screen and (max-width: 767px) {
@@ -131,6 +132,55 @@ nav ul li#sign-in a {
     grid-template-columns: 200px 125px 125px 125px 125px 125px 125px 125px 200px;
   }
 }
+main h2 {
+  padding: 0;
+  margin: 0;
+}
+main #recipe ul {
+  list-style: initial;
+}
+@media screen and (min-width: 1280px) {
+  main {
+    display: grid;
+    grid-template-rows: 150px 750px 100px 500px 500px;
+  }
+  main .article-content {
+    display: grid;
+    grid-template-columns: 125px 500px 655px;
+  }
+  main .article-content img {
+    width: 500px;
+  }
+  main #details {
+    display: grid;
+    background-color: #0d0d0d;
+    color: #7abfbf;
+    justify-items: center;
+  }
+  main #details ul {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  main #details ul li {
+    display: grid;
+  }
+  main #details ul li :first-child {
+    font-weight: bold;
+  }
+  main #recipe {
+    display: grid;
+    grid-template-columns: 250px calc(100% - 250px);
+    text-align: center;
+  }
+  main #recipe li {
+    padding: 10px;
+    text-align: left;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -187,6 +237,11 @@ dt {
 
 ul {
   list-style: none;
+}
+
+.search {
+  position: absolute;
+  top: 150px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -23,6 +23,13 @@ main {
   }
   aside {
     background-color: $teal;
+    #side-dish-container {
+      dl {
+        dd:last-child {
+          font-weight: bold;
+        }
+      }
+    }
   }
 
   #details {
@@ -35,6 +42,8 @@ main {
     }
   }
   .article-content {
+    display: grid;
+
     ul {
       padding: 0;
       li {
@@ -51,14 +60,11 @@ main {
       line-height: 1.5em;
     }
   }
-  @media screen and (max-width: 767px) {
-  }
-  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  @media screen and (max-width: 1279.98px) {
     top: 200px;
     display: flex;
     flex-direction: column;
     .article-content {
-      display: grid;
       grid-template-rows: 125px 1152px 300px;
       img {
         width: 768px;
@@ -195,10 +201,35 @@ main {
             margin: 10px;
             padding-left: 10px;
           }
-          :last-child {
-            font-weight: bold;
-          }
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .article-content {
+      grid-template-rows: 125px 621px 300px;
+      img {
+        width: 414px;
+      }
+    }
+    #details {
+      padding-left: 10px;
+      ul {
+        text-align: left;
+      }
+    }
+
+    #recipe {
+      display: flex;
+      flex-direction: column;
+    }
+
+    aside {
+      #side-dish-container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
       }
     }
   }

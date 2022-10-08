@@ -1,0 +1,15 @@
+@import "./colors.scss";
+
+.rating-5,
+.rating-4 {
+  span {
+    content: url("./star_filled.svg");
+    stroke: $red_orange;
+  }
+}
+
+.rating-4 {
+  :last-child {
+    content: url("./star.svg");
+  }
+}

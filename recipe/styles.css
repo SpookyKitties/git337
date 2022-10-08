@@ -639,4 +639,14 @@ input[type=checkbox] {
   display: none;
 }
 
+.rating-5 span,
+.rating-4 span {
+  content: url("./star_filled.svg");
+  stroke: #eb5428;
+}
+
+.rating-4 :last-child {
+  content: url("./star.svg");
+}
+
 /*# sourceMappingURL=styles.css.map */

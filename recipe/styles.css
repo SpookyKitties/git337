@@ -39,16 +39,34 @@ footer #social ul {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 footer #social ul a {
+  color: #eb5428;
+  text-decoration: none;
   display: grid;
   justify-items: center;
 }
 @media screen and (min-width: 1280px) {
   footer {
+    padding: 10px;
     display: grid;
   }
   footer .copyright {
     grid-column-start: 1;
     grid-row-start: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 300px;
+  }
+  footer .copyright img {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  footer .copyright div {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
   }
   footer #social {
     grid-column-start: 3;

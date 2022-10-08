@@ -51,11 +51,13 @@ main {
       padding: 0;
       li {
         a {
+          text-transform: uppercase;
           text-decoration: none;
           color: $red_orange;
           display: flex;
           flex-direction: column;
           align-items: center;
+          text-align: center;
         }
       }
     }
@@ -223,10 +225,13 @@ main {
   }
 
   @media screen and (max-width: 767px) {
+    top: 125px;
     .article-content {
       grid-template-rows: 125px 621px 300px;
       img {
         width: 414px;
+      }
+      ul {
       }
     }
     #details {

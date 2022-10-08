@@ -14,7 +14,10 @@
     stroke: $white;
     background-color: $red_orange;
   }
-
+  @media screen and (max-width: 767px) {
+    top: 100px;
+    left: 35%;
+  }
   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     top: 25px;
     right: 30%;

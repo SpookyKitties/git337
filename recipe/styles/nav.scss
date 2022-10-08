@@ -46,6 +46,42 @@ nav {
 }
 
 @media screen and (max-width: 767px) {
+  nav {
+    position: absolute;
+    height: 125px;
+    top: 0;
+    width: 414px;
+    ul {
+      display: grid;
+      li {
+        display: none;
+        height: 75px;
+        &#menu {
+          display: initial;
+          grid-column-start: 1;
+          grid-row-start: 1;
+        }
+        &#home {
+          display: initial;
+          grid-column-start: 2;
+          grid-row-start: 1;
+          grid-column-end: 3;
+          width: 164px;
+        }
+        &#sign-in {
+          display: initial;
+          grid-column-start: 4;
+          grid-row-start: 1;
+          a {
+            margin: 10px;
+          }
+        }
+        a {
+          margin: 10px;
+        }
+      }
+    }
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1279.98px) {
   nav {
@@ -58,6 +94,9 @@ nav {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       gap: 5px;
       li {
+        &#menu {
+          display: none;
+        }
         height: 75px;
         width: 75px;
         grid-row-start: 2;
@@ -90,6 +129,11 @@ nav {
     ul {
       display: grid;
       grid-template-columns: 200px 125px 125px 125px 125px 125px 125px 125px 200px;
+      li {
+        &#menu {
+          display: none;
+        }
+      }
     }
   }
 }
